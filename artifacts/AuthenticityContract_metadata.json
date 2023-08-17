@@ -1,0 +1,181 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_productId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_checkpointAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_checkpointName",
+						"type": "string"
+					}
+				],
+				"name": "addCheckpoint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_productId",
+						"type": "uint256"
+					}
+				],
+				"name": "getAuthorizedCheckpoints",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "checkpointAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "checkpointName",
+								"type": "string"
+							},
+							{
+								"internalType": "enum AuthenticityContract.CheckpointStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct AuthenticityContract.Checkpoint[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "goodsCheckpoints",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "checkpointAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "checkpointName",
+						"type": "string"
+					},
+					{
+						"internalType": "enum AuthenticityContract.CheckpointStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_productId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_checkpointAddress",
+						"type": "address"
+					}
+				],
+				"name": "verifyAuthenticity",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AuthenticityContract.sol": "AuthenticityContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AuthenticityContract.sol": {
+			"keccak256": "0x70a6d2ffa259dcaf3976260d88e5482983ee0488925b6c6dfaddd8273c0685ff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7e474546dcd310b86e1314b11f57c20fb6657ada8817793cc638dd95b4405b99",
+				"dweb:/ipfs/QmXZL3mganb7iUp7FtkS9G7CDjSJtgfx8F3tv3dr9uRi1L"
+			]
+		}
+	},
+	"version": 1
+}
